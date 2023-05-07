@@ -31,9 +31,11 @@ My other cheat sheets:
 Future plans:
 
 * install Burp Proxy and ZAP certificates,
-* test intent provider injections, content provider injections, broadcast receiver injections,
-* test deeplinking,
-* create Frida scripts.
+* test widgets, push notifications, and Firebase,
+* deeplink hijacking, task hijacking, intent hijacking,
+* intent provider injections, content provider injections, broadcast receiver injections,
+* SMALI code injection,
+* create more Frida scripts.
 
 ## Table of Contents
 
