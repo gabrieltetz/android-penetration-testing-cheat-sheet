@@ -631,6 +631,24 @@ frida-trace -U -p 1337 -i 'recv*' -i 'send*'
 
 ### Frida Scripts
 
+Bypass SSL Pinning using [android-ssl-pinning-bypass-2](https://codeshare.frida.re/@ivan-sincek/android-ssl-pinning-bypass-2) script:
+
+```fundamental
+frida -U -no-pause -l android-ssl-pinning-bypass-2.js -f com.someapp.dev
+
+frida -U -no-pause --codeshare ivan-sincek/android-ssl-pinning-bypass-2 -f com.someapp.dev
+```
+
+I prefer to use the built-in method in [Objection](#bypasses).
+
+---
+
+For this Frida script to work, you need to push your Burp Proxy or ZAP certificate to a specific location:
+
+```fundamental
+adb push cacert.der /data/local/tmp/cacert.der
+```
+
 Bypass SSL Pinning using [android-ssl-pinning-bypass](https://codeshare.frida.re/@ivan-sincek/android-ssl-pinning-bypass) script:
 
 ```fundamental
