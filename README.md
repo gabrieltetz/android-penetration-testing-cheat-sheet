@@ -419,13 +419,13 @@ Search for files and directories in [SharedPreferences](https://developer.androi
 cd /data/user/0/com.someapp.dev/shared_prefs/
 ```
 
-This is not an issue if the directory is not world-readable:
+The directory should not be world-readable (e.g. `-rw-rw-r--`):
 
 ```bash
 ls /data/user/0/com.someapp.dev/shared_prefs/ -al
 ```
 
-This is however an issue if the production build is debuggable:
+The production build should not be [debuggable](https://developer.android.com/topic/security/risks/android-debuggable):
 
 ```bash
 run-as com.someapp.dev
@@ -435,7 +435,7 @@ adb exec-out run-as com.someapp.dev cat /data/user/0/com.someapp.dev/shared_pref
 
 If the production build is debuggable, it is possible to get the read access rights to the app specific directories as a low-privileged user by leveraging `run-as` command.
 
-SharedPreferences is unencrypted and backed up by default, and as such, should not contain any sensitive data after user logs out - it should be cleared by calling [SharedPreferences.Editor.clear\(\)](https://developer.android.com/reference/android/content/SharedPreferences.Editor#clear()). It is also possible to exclude it from backups by specifying [dataExtractionRules](https://developer.android.com/guide/topics/data/autobackup#include-exclude-android-12) inside AndroidManifest.xml.
+SharedPreferences is unencrypted and backed up by default, and as such, should not contain any sensitive data after user logs out - it should be cleared by calling [SharedPreferences.Editor.clear\(\)](https://developer.android.com/reference/android/content/SharedPreferences.Editor#clear()). It should also be excluded from backups by specifying [dataExtractionRules](https://developer.android.com/guide/topics/data/autobackup#include-exclude-android-12) inside app's AndroidManifest.xml.
 
 ## 4. Inspect Files
 
