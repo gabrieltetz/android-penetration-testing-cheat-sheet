@@ -34,6 +34,7 @@ Future plans:
 * test widgets, push notifications, and Firebase,
 * deeplink hijacking, task hijacking, intent hijacking,
 * intent provider injections, content provider injections, broadcast receiver injections,
+* WebView attacks,
 * SMALI code injection,
 * create more Frida scripts.
 
