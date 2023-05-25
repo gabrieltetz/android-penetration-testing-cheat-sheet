@@ -34,8 +34,8 @@ Future plans:
 * test widgets, push notifications, and Firebase,
 * deeplink hijacking, task hijacking, intent hijacking,
 * intent provider injections, content provider injections, broadcast receiver injections,
-* WebView attacks,
 * SMALI code injection,
+* WebView attacks,
 * create more Frida scripts.
 
 ## Table of Contents
@@ -646,7 +646,7 @@ I prefer to use the built-in method in [Objection](#bypasses).
 
 ---
 
-For this Frida script to work, you need to push your Burp Proxy or ZAP certificate to a specific location:
+For this Frida script to work, you need to push your Burp Proxy or ZAP certificate to a specific location with the specific name `cacert.der`:
 
 ```fundamental
 adb push cacert.der /data/local/tmp/cacert.der
