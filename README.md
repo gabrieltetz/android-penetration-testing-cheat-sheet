@@ -31,6 +31,7 @@ My other cheat sheets:
 Future plans:
 
 * install Burp Proxy and ZAP certificates,
+* system logging,
 * test widgets, push notifications, and Firebase,
 * deeplink hijacking, task hijacking, intent hijacking,
 * intent provider injections, content provider injections, broadcast receiver injections,
