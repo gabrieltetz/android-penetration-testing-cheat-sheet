@@ -97,7 +97,7 @@ Future plans:
 
 **11. [Tips and Security Best Practices](#11-tips-and-security-best-practices)**
 
-**12. [Useful Websites and Tools](#12-useful-websites-and-tools)**
+**12. [Start Activity](#12-start-activity)**
 
 **13. [Useful Websites and Tools](#12-useful-websites-and-tools)**
 
