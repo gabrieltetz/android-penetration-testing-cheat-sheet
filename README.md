@@ -99,6 +99,8 @@ Future plans:
 
 **12. [Useful Websites and Tools](#12-useful-websites-and-tools)**
 
+**13. [Useful Websites and Tools](#12-useful-websites-and-tools)**
+
 ## 0. Install Tools
 
 ### WiFi ADB - Debug Over Air
@@ -955,7 +957,11 @@ Access tokens should be short lived and invalidated once the user logs out.
 
 Don't forget to test widgets, push notifications, app extensions, and Firebase.
 
-## 12. Useful Websites and Tools
+## 12. Start Activity
+```fundamental
+ am start -n br.com.app/br.com.profile.presentation.ProfileActivity
+```
+## 13. Useful Websites and Tools
 
 * [zxing.org/w/decode.jspx](https://zxing.org/w/decode.jspx) (decode QR codes)
 * [odinforum.com](https://odinforum.com/discussion/11/latest-versions-of-odin-flashing-tool) (firmware flashing tool for Samsung devices)
