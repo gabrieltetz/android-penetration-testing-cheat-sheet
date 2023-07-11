@@ -959,7 +959,9 @@ Don't forget to test widgets, push notifications, app extensions, and Firebase.
 
 ## 12. Start Activity
 ```fundamental
- am start -n br.com.app/br.com.profile.presentation.ProfileActivity
+adb shell
+su
+am start -n br.com.app/br.com.profile.presentation.ProfileActivity
 ```
 ## 13. Useful Websites and Tools
 
